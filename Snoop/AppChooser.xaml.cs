@@ -292,33 +292,4 @@ namespace Snoop
             }
         }
     }
-
-    public class AttachResult
-    {
-        public AttachResult()
-        {
-            this.Success = true;
-        }
-
-        public AttachResult(Exception attachException)
-        {
-            this.Success = false;
-
-            this.AttachException = attachException;
-        }
-
-        public AttachResult(Exception attachException, string windowName)
-        {
-            this.Success = false;
-
-            this.AttachException = attachException;
-            this.WindowName = windowName;
-        }
-
-        public bool Success { get; }
-
-        public Exception AttachException { get; }
-
-        public string WindowName { get; }
-    }
 }
