@@ -6,15 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\Snoop.Core\Data\TransientSettingsData.cs" Link="Data\TransientSettingsData.cs" />
+    <Compile Include="..\Snoop.Core\Infrastructure\NativeMethods.cs" Link="NativeMethods.cs" />
+    <Compile Include="..\Snoop.InjectorLauncher\InjectorLauncherCommandLineOptions.cs" Link="InjectorLauncherCommandLineOptions.cs" />
+  </ItemGroup>
+    
+  <ItemGroup>
     <PackageReference Include="CommandLineParser" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\Snoop.InjectorLauncher\Snoop.InjectorLauncher.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Infrastucture\" />
   </ItemGroup>
 
 </Project>

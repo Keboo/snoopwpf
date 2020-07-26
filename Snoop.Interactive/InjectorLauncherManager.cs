@@ -10,7 +10,6 @@ namespace Snoop.Interactive
     using System.IO;
     using System.Linq;
     using System.Reflection;
-    using System.Runtime.CompilerServices;
     using CommandLine;
     using Snoop.Data;
     using Snoop.Infrastructure;
