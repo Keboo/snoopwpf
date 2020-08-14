@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
@@ -10,9 +11,15 @@
     <Compile Include="..\Snoop.Core\Infrastructure\NativeMethods.cs" Link="NativeMethods.cs" />
     <Compile Include="..\Snoop.InjectorLauncher\InjectorLauncherCommandLineOptions.cs" Link="InjectorLauncherCommandLineOptions.cs" />
   </ItemGroup>
-    
+
   <ItemGroup>
-    <PackageReference Include="CommandLineParser" />
+    <PackageReference Include="CommandLineParser" Version="2.8.0" />
+    <PackageReference Include="Microsoft.DotNet.Interactive.CSharp" Version="1.0.0-beta.20374.1" />
+    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="1.*" />
+    <PackageVersion Include="JetBrains.Annotations" Version="2020.1.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" version="3.6.0" />
+    <PackageVersion Include="StyleCop.Analyzers" version="1.1.118" />
+    <PackageVersion Include="WpfAnalyzers" version="3.1.0" />
   </ItemGroup>
 
 </Project>
